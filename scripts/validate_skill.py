@@ -15,6 +15,7 @@ REQUIRED_PATHS = (
     "references/lesson-template.md",
     "references/teaching-rules.md",
     "references/evaluation-rubric.md",
+    "references/canvasight-learning-map.md",
     "scripts/inspect_repository.sh",
 )
 

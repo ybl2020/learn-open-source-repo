@@ -85,3 +85,15 @@ Map to the learner's current real project, remembered project, or stated goal. I
 ## 13. 一句话总结 / One-Sentence Summary
 
 Provide one accurate sentence suitable for review or interview recall.
+
+## 14. 本节知识总结 / Lesson Digest
+
+Create a compact, evolving summary with the lesson ID, problem, new techniques, current flow change, actual evidence, limitations, and application. Mark it `Draft` or `Learning`; do not mark it final immediately after the initial explanation.
+
+During follow-up discussion, revise the relevant lesson content when a learner question reveals that an explanation, run record, result interpretation, or relationship was incomplete.
+
+## 15. 累计学习画布 / Cumulative Learning Canvas
+
+Follow [canvasight-learning-map.md](canvasight-learning-map.md). Report whether Canvasight was updated, which lesson branch changed, how many questions are recorded, and the lesson state.
+
+Do not generate a new final canvas for every lesson. Maintain one cumulative Page, update it incrementally during questions when Canvasight supports live edits, and finalize the lesson branch only when the learner finishes or requests the next lesson.

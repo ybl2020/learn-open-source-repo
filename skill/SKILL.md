@@ -18,6 +18,7 @@ Teach through the repository rather than merely summarizing it or getting it to 
 - Explain local compatibility fixes and avoid silently changing instructional behavior.
 - Give a concise progress update whenever meaningful work has taken about one minute without visible progress.
 - Keep moving through setup failures; change approach or recommend a better repository when the current one is a poor teaching vehicle.
+- Treat a lesson as an evolving learning record. Capture substantive follow-up questions, where the confusion originated, the clarification, and supporting evidence before finalizing the lesson.
 
 ## Workflow
 
@@ -78,7 +79,17 @@ For multiple questions inside one code example, group them by tested behavior:
 
 Add a small prediction-and-verification exercise at meaningful milestones. Ask the learner to predict what changing an input or parameter will do, then run and analyze it when they are ready.
 
-### 7. Map the Lesson to a Project
+### 7. Maintain the Lesson Learning Record
+
+Read [references/canvasight-learning-map.md](references/canvasight-learning-map.md). After the initial lesson, create or update a `Draft` lesson digest rather than treating it as final. During follow-up discussion, assign each substantive course question to the correct lesson and record its `Confusion Anchor`, missing understanding, cause, clarification, evidence, understanding update, and status.
+
+When Canvasight graph tools are callable, maintain one cumulative Page per repository course. Read the current graph context before follow-up writes and use incremental merge operations. Do not hand-edit `.scatter/scatter.json`.
+
+When Canvasight is unavailable, retain the digest and question records as pending course state and say that the canvas was not updated. Do not claim a successful canvas write without tool evidence.
+
+Before responding to `continue the next lesson`, `finish this lesson`, or an equivalent transition, finalize the current lesson first: incorporate resolved questions into the relevant lesson sections, preserve the question trail, list unresolved questions, update the cumulative flow and open problems, and set the lesson to `Completed`. Then begin the next lesson.
+
+### 8. Map the Lesson to a Project
 
 Use this priority:
 
@@ -89,7 +100,7 @@ current real project -> remembered project -> stated career/learning goal
 
 If no real project maps naturally, create one clearly labeled `Hypothetical Project / 虚拟学习项目`. Keep using the same project across later lessons and extend it as new capabilities appear. Do not invent a new project for every lesson.
 
-### 8. Evaluate Learning and Close the Loop
+### 9. Evaluate Learning and Close the Loop
 
 Use [references/evaluation-rubric.md](references/evaluation-rubric.md) at module boundaries. Evaluate whether the learner can explain, locate, modify, verify, and transfer the technique.
 
@@ -115,4 +126,5 @@ End the repository course with:
 - [references/lesson-template.md](references/lesson-template.md): required bilingual lesson format and example-result rules.
 - [references/teaching-rules.md](references/teaching-rules.md): evidence, interaction, experiment, and transfer guidance.
 - [references/evaluation-rubric.md](references/evaluation-rubric.md): learning checkpoints and completion criteria.
+- [references/canvasight-learning-map.md](references/canvasight-learning-map.md): cumulative Canvasight Page, lesson lifecycle, question capture, and incremental merge rules.
 - `scripts/inspect_repository.sh`: safe, read-only local repository orientation.

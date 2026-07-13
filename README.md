@@ -16,6 +16,7 @@
   <a href="#它会怎么教你">工作方式</a> ·
   <a href="#快速开始">快速开始</a> ·
   <a href="#课程输出格式">课程格式</a> ·
+  <a href="#累计学习画布">学习画布</a> ·
   <a href="#能力边界">能力边界</a>
 </p>
 
@@ -182,6 +183,32 @@ $learn-open-source-repo 我想通过这个项目重点学习 RAG、Reranking 和
 - 不同功能、分支或失败模式：分别完整分析；
 - 该规则只用于压缩重复问题，不会省略 Embedding、Vector Store、Top-K 等正常技术讲解。
 
+## 累计学习画布
+
+Skill 可以与 [Canvasight](https://github.com/Niall-Young/Canvasight) 配合，为一个开源项目维护一张持续增长的学习 Page，而不是每节课生成一张互相割裂的静态图。
+
+```text
+Initial Lesson 初始讲解
+→ Draft Lesson Digest 课程摘要草稿
+→ Questions & Clarifications 提问与澄清
+→ Final Consolidation 最终沉淀
+→ Completed Lesson 完成课程
+```
+
+每个实质问题都会归入真正触发它的课程，并记录：
+
+```text
+Question ID
+User Question
+Confusion Anchor / 疑问触发位置
+Cause / 课程或材料中的理解缺口
+Clarification / 澄清
+Evidence / 代码或运行证据
+Status / 已解决或待确认
+```
+
+Canvasight 可用时，Skill 会读取当前 Page 后使用增量合并，保留旧节点、连线和手工位置。用户说“继续下一课”时，先把上一课的问题融入最终摘要、更新当前流程和遗留问题，再开始下一课。Canvasight 不可用时只保留待写入记录，不会手工修改 `.scatter/scatter.json` 或声称画布已更新。
+
 ## 内置仓库扫描
 
 Skill 附带一个只读扫描脚本，可快速定位仓库规模、技术清单、入口文件、示例和测试：
@@ -197,6 +224,7 @@ Skill 附带一个只读扫描脚本，可快速定位仓库规模、技术清�
 ```text
 learn-open-source-repo/
 ├── README.md
+├── CHANGELOG.md
 ├── LICENSE
 ├── .github/
 │   └── workflows/
@@ -208,6 +236,7 @@ learn-open-source-repo/
     ├── agents/
     │   └── openai.yaml
     ├── references/
+    │   ├── canvasight-learning-map.md
     │   ├── repository-intake.md
     │   ├── lesson-template.md
     │   ├── teaching-rules.md
@@ -243,6 +272,7 @@ learn-open-source-repo/
 - [x] 真实运行结果与问题诊断
 - [x] 项目映射与五级学习评估
 - [x] 本地只读仓库扫描脚本
+- [x] Canvasight 累计学习画布与课程问答沉淀
 - [ ] 增加可选的课程进度文件模板
 - [ ] 增加更多语言和构建系统的扫描规则
 - [ ] 使用更多不同类型仓库进行前向验证
