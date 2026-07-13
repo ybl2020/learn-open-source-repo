@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/skill-validated-brightgreen" alt="Skill Validated">
+  <a href="https://github.com/ybl2020/learn-open-source-repo/actions/workflows/validate.yml"><img src="https://github.com/ybl2020/learn-open-source-repo/actions/workflows/validate.yml/badge.svg" alt="Validate Skill"></a>
   <a href="https://github.com/ybl2020/learn-open-source-repo/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ybl2020/learn-open-source-repo" alt="License"></a>
   <a href="https://github.com/ybl2020/learn-open-source-repo/stargazers"><img src="https://img.shields.io/github/stars/ybl2020/learn-open-source-repo?style=flat" alt="GitHub Stars"></a>
   <img src="https://img.shields.io/badge/Codex-Skill-111827" alt="Codex Skill">
@@ -196,6 +196,9 @@ Skill 附带一个只读扫描脚本，可快速定位仓库规模、技术清�
 learn-open-source-repo/
 ├── README.md
 ├── LICENSE
+├── .github/
+│   └── workflows/
+│       └── validate.yml
 ├── scripts/
 │   └── validate_skill.py
 └── skill/
