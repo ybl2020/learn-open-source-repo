@@ -1,0 +1,4 @@
+interface:
+  display_name: "从零开始学习开源项目"
+  short_description: "把开源仓库拆成可运行、可验证、可迁移的中英双语课程"
+  default_prompt: "Use $learn-open-source-repo to inspect this open-source repository and teach it to me lesson by lesson."
