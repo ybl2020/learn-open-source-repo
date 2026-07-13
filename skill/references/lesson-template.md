@@ -28,7 +28,21 @@ Identify input, core functions, important parameters, data structures, and outpu
 
 ## 7. 实际运行方式 / How to Run
 
-Give the verified command and prerequisites. Mention local adaptations.
+Provide a reproducible run record, not only a command. Include:
+
+```text
+运行状态 / Verification Status: actually run, inferred, or not run
+运行环境 / Environment: relevant runtime, model, service, or database
+工作目录 / Working Directory: absolute local path when available
+前置依赖 / Prerequisites: required files, packages, variables, and services
+运行命令 / Command: the exact verified command
+成功判断 / Success Signals: the important lines or behavior that prove it worked
+失败排查 / Troubleshooting: likely blockers specific to this lesson
+```
+
+When the environment and prerequisites are unchanged from prior lessons, summarize them briefly but still provide the working directory, exact command, verification status, and success signals.
+
+The user may not see terminal tool output. Relay the meaningful command output in the lesson instead of saying only that execution succeeded. Mention local adaptations and distinguish commands actually executed from commands provided only for the learner to try.
 
 ## 8. 跑通后的结果 / Execution Results
 

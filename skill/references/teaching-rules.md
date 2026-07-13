@@ -3,6 +3,7 @@
 ## Evidence Discipline
 
 - Use source code to explain implementation and runtime output to explain observed behavior.
+- Because terminal tool output may be hidden from the learner, restate the important command, success signals, and key output in the lesson.
 - Label unexecuted behavior as inferred or expected.
 - Report command failures, missing tests, and unverified paths.
 - Inspect whether a plausible answer came from retrieved context or model prior knowledge.

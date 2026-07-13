@@ -10,6 +10,7 @@ Teach through the repository rather than merely summarizing it or getting it to 
 ## Core Rules
 
 - Use actual repository code and actual execution output as the primary evidence.
+- Make every runnable lesson independently reproducible: state the working directory, exact command, whether it was actually executed, and the visible signals that prove success.
 - Distinguish expected documentation output from locally observed output.
 - Preserve English technical terms alongside Chinese explanations when teaching in Chinese.
 - Do not treat successful startup as proof of understanding.
